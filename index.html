@@ -7,16 +7,44 @@
 	<style type="text/css">
 		img { position: absolute; top: 0px; left: 0px}
 		div { position: absolute; width: 500px; height: 500px; }
+		#shubham{
+			align-content: center;
+			background-color: black;
+			margin-left: 100px;
+		}
 		#rightSide { left: 520px;
-			border-left: 1px solid black; }
+			border-left: 1px solid black;
+		border-color: white;
+		background-color: black}
+
+		h1 {
+			font-family: GillSans, Calibri, Trebuchet, sans-serif;
+			text-align: center;
+			color: white;
+			text-decoration-color: bisque;
+		}
+		p{
+			text-align: center;
+			font-size: medium;
+			margin-right: 10px;
+		}
+		body{
+			overflow: hidden;
+		}
 		</style>
-	</head>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+</head>
 	<body onload="generateFaces()">
 
-		<h1>Matching game</h1>
+		<h1 class="card-panel black hoverable">MATCHING GAME</h1>
 		<p>Click on the extra smiling face on the left.</p>
+		<div id="shubham">
 		<div id="leftSide"></div><div id="rightSide"></div>
-
+		</div>
 		<script>
 
 			var numberOfFaces = 5;
